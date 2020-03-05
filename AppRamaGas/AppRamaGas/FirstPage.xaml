@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppRamaGas.FirstPage">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="gasolinaLogIn.jpg" Aspect="AspectFill"></Image>
+            <BoxView Color="#5A8CD0" Opacity="0.8"></BoxView>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="gasolinaicono" WidthRequest="90" HeightRequest="90" Margin="0,20,0,30"></Image>
+                <!--<Label Text="RamaGas App" TextColor="White" FontAttributes="Bold" FontSize = "20" Margin="0,150,0,30" HorizontalTextAlignment="Center" >-->
+                <Label Text="RamaGas App" TextColor="White" FontAttributes="Bold" FontSize = "20" HorizontalTextAlignment="Center" VerticalTextAlignment="End"></Label>
+
+                <StackLayout Grid.Row="1" Padding="30,20" Spacing="20">
+                    <Button  FontSize="15" Text="Buscar gasolinera" BackgroundColor="White" BorderWidth="20" FontAttributes="Bold" TextColor="Tomato" ></Button>
+                    <Button FontSize="15" Text="Administrar" BackgroundColor="White" BorderWidth="20" FontAttributes="Bold" TextColor="Tomato"></Button>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

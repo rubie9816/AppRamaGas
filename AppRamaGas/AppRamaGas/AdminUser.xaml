@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppRamaGas.AdminUser">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="gasolinaLogIn.jpg" Aspect="AspectFill"></Image>
+            <BoxView Color="#5A8CD0" Opacity="0.8"></BoxView>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <!--<Label Text="RamaGas App" TextColor="White" FontAttributes="Bold" FontSize = "20" Margin="0,150,0,30" HorizontalTextAlignment="Center" >-->
+                <Label Grid.Row="0" Text="Administración" TextColor="White" FontAttributes="Bold" FontSize = "20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"></Label>
+                <Label Grid.Row="1" TextColor="White" FontSize="10" Text="Realice las modificaciones, a continuación presione el boton Guardar cambios." HorizontalTextAlignment="Center" VerticalTextAlignment="End" />
+
+                <StackLayout Grid.Row="2" Padding="30,20" Spacing="10">
+       
+                    <Label TextColor="White" FontSize="15" Text="Precios de gasolina" HorizontalTextAlignment="Center"/>
+                    <Entry FontSize="10" Placeholder="Gasolina magna" PlaceholderColor="White"></Entry>
+                    <Entry FontSize="10" Placeholder="Gasolina premium" PlaceholderColor="White"></Entry>
+                    <Entry FontSize="10" Placeholder="Diesel" PlaceholderColor="White"></Entry>
+                    <Button  FontSize="15" Text="Guardar cambios" WidthRequest="40" HeightRequest="40" BackgroundColor="White" BorderWidth="10" FontAttributes="Bold" TextColor="DarkSeaGreen" ></Button>
+                    <Button  FontSize="15" Text="Cancelar" WidthRequest="40" HeightRequest="40" BackgroundColor="White" BorderWidth="10" FontAttributes="Bold" TextColor="Tomato" ></Button>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
