@@ -10,17 +10,38 @@
             <Image Source="gasolinaLogIn.jpg" Aspect="AspectFill"></Image>
             <BoxView Color="#5A8CD0" Opacity="0.8"></BoxView>
             <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"></RowDefinition>
-                <RowDefinition Height="Auto"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-            </Grid.RowDefinitions>
-            
-            <Label Grid.Row="0" Text="Nuevo usuario" TextColor="White" FontAttributes="Bold" FontSize = "20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"></Label>
-            <Label Grid.Row="1" Text="Nuevo usuario" TextColor="White" FontAttributes="Bold" FontSize = "10" HorizontalTextAlignment="Center" VerticalTextAlignment="End"></Label>
-
-                <ScrollView Grid.Row="2">
-                    <StackLayout Spacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="Gasolinera Pepe" TextColor="White" FontAttributes="Bold" FontSize = "20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"></Label>
+                <Label Grid.Row="1"  Text="Ubicacion:" TextColor="White" FontAttributes="Bold" FontSize = "10" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"></Label>
+                <Label Grid.Row="1"  Text="Novena 1223, Calle XY Colonia XXXX" TextColor="White" FontAttributes="Bold" FontSize = "10" HorizontalTextAlignment="End" VerticalTextAlignment="Start"></Label>
+                <Label Grid.Row="2"  Text="Precio magna:" TextColor="White" FontAttributes="Bold" FontSize = "10" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"></Label>
+                <Label Grid.Row="2"  Text="$20" TextColor="White" FontAttributes="Bold" FontSize = "10" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"></Label>
+                <Label Grid.Row="3"  Text="Precio premium:" TextColor="White" FontAttributes="Bold" FontSize = "10" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"></Label>
+                <Label Grid.Row="3"  Text="$30" TextColor="White" FontAttributes="Bold" FontSize = "10" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"></Label>
+                <Label Grid.Row="4"  Text="Precio diesel:" TextColor="White" FontAttributes="Bold" FontSize = "10" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"></Label>
+                <Label Grid.Row="4"  Text="$50" TextColor="White" FontAttributes="Bold" FontSize = "10" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"></Label>
+                   
+                <ScrollView Grid.Row="5">
+                    <ListView BackgroundColor="White" RefreshControlColor="White" SeparatorColor="White">
+                        <ListView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Gasolinera Panchito</x:String>
+                                <x:String>Gasolinera Monkey</x:String>
+                                <x:String>Gasolinera Jesus</x:String>
+                                <x:String>Gasolinera don chui</x:String>
+                                <x:String>Gasolinera rendichica</x:String>
+                            </x:Array>
+                        </ListView.ItemsSource>
+                    </ListView>
+                    <!--<StackLayout Spacing="10">
                         <Button Text="hola"></Button>
                         <Button Text="hola"></Button>
                         <Button Text="hola"></Button>
@@ -31,8 +52,7 @@
                         <Button Text="hola"></Button>
                         <Button Text="hola"></Button>
                         <Button Text="hola"></Button>
-                        <Button Text="hola"></Button>
-                    </StackLayout>
+                    </StackLayout>-->
                 </ScrollView>
             </Grid>
         </Grid>
